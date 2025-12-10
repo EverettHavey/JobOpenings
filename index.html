@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comedy Career Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Comedy Career Hub</h1>
+        <p>Your source for the most hilariously bizarre job openings.</p>
+    </header>
+
+    <main id="job-list">
+        </main>
+
+    <div id="application-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-job-title">Apply for: [Job Title]</h2>
+            <form id="application-form">
+                <input type="hidden" id="applied-job-id" name="jobId">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="cover-letter">Why are you the perfect fit for this job? (Be Funny!)</label>
+                <textarea id="cover-letter" name="coverLetter" rows="4" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+            <p id="submission-message" style="display: none; color: green; font-weight: bold; margin-top: 15px;">Application submitted! Check the console for details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

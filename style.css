@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+#job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h2 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.job-card p {
+    margin: 5px 0;
+}
+
+.job-card .salary {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.apply-button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.apply-button:hover {
+    background-color: #e0a800;
+}
+
+/* --- Modal Styles --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Styling */
+#application-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#application-form input[type="text"],
+#application-form input[type="email"],
+#application-form input[type="tel"],
+#application-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+#application-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+#application-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* --- Mobile Responsiveness (Media Query) --- */
+@media (max-width: 768px) {
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    /* Job cards should take up the full width on smaller screens */
+    #job-list {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .job-card {
+        width: 100%; /* Make card fill the available space */
+        max-width: 400px; /* Optional: Sets a max width for large phones/small tablets */
+        margin: 0 auto; /* Center the card */
+        padding: 20px;
+    }
+
+    /* Adjust modal for better viewing on small screens */
+    .modal-content {
+        width: 90%; 
+        margin: 20% auto; /* Bring the modal up a bit higher */
+        padding: 20px;
+    }
+
+    /* Make text areas a bit taller on mobile for easier typing */
+    #application-form textarea {
+        min-height: 100px;
+    }
+}
