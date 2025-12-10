@@ -210,7 +210,71 @@ const funnyJobs = [
         company: "Glass Gleam Group",
         salary: "$39,000/year",
         description: "Wipe fingerprints off all shiny surfaces (monitors, tablet screens, elevator buttons). Obsessive attention to detail required.",
-    }
+    },
+    {
+    "id": 31,
+    "title": "Chief Water-Vibe Mixologist (Pool DJ)",
+    "company": "Resort Rhythms Inc.",
+    "salary": "$44,000/year",
+    "description": "Responsible for mood-setting music transitions between 'Calm Floating' and 'Aggressive Water Aerobics.' Must maintain a library of 10,000+ songs that sound acceptable when heard through a damp, slightly overheated speaker system. Mandatory requirement: No 'Who Let The Dogs Out' after 3 PM."
+    },
+    {
+    "id": 32,
+    "title": "Professional Meeting End Signal Expert",
+    "company": "Time Tamer Tech",
+    "salary": "$50,000/year",
+    "description": "Walk into endless meetings and subtly perform a pre-arranged signal (e.g., a cough, a wink, a dramatic glance at a non-existent watch) to allow the CEO to leave gracefully."
+    },
+    {
+    "id": 33,
+    "title": "Chief Fridge-Light Sensor Tester",
+    "company": "Appliance Angst Inc.",
+    "salary": "$37,000/year",
+    "description": "Spend the workday slowly opening and closing the office refrigerator door to verify that the internal light reliably switches off when the door is closed. Requires patience and strong neck muscles."
+    },
+    {
+    "id": 34,
+    "title": "Chief Office Supply Hoarder Negotiator",
+    "company": "Pen Protection Patrol",
+    "salary": "$60,000/year",
+    "description": "Mediator between employees who secretly stockpile the best office supplies (pens, sticky notes) and those who need them. Must be good at hostage situations involving high-lighters."
+    },
+    {
+    "id": 35,
+    "title": "Corporate Time-Wasting Expert",
+    "company": "Procrastination Partners",
+    "salary": "$70,000/year",
+    "description": "Design and implement strategies that look productive but waste maximum time, ensuring no project ever launches early. Specialization in color-coding unnecessary spreadsheets is mandatory."
+    },
+    {
+    "id": 36,
+    "title": "Human Placeholder for Furniture Deliveries",
+    "company": "Wait Watchers Agency",
+    "salary": "$35,000/year",
+    "description": "Sit on an empty box and wait for hours for the delivery window of a new chair or desk. The key is to look busy but not *too* busy. Requires endless patience and charged phone."
+    },
+    {
+    "id": 37,
+    "title": "Emergency Break Room Snack Restocker",
+    "company": "Crunch Control Crew",
+    "salary": "$50,000/year",
+    "description": "The moment the last bag of chips is taken or the last K-cup is used, a silent alarm sounds, and you must appear instantly with fresh supplies, like a snack-based ninja."
+    },
+    {
+    "id": 38,
+    "title": "Dedicated Loading Screen Observer",
+    "company": "Progress Monitoring Professionals (PMP)",
+    "salary": "$41,000/year",
+    "description": "Sit inside a designated, climate-controlled utility closet with a dedicated monitor displaying the company's most notoriously slow server loading screen. The employee's sole duty is to watch the progress bar and loudly announce when it finally hits 100%. Requires intense focus on incremental change and a high tolerance for repetitive elevator music."
+    },
+    {
+    "id": 39,
+    "title": "Official Paper Jam Mediator and Toner Level Mystic",
+    "company": "Duplication Domination Dept.",
+    "salary": "$43,000/year",
+    "description": "Maintain a permanent vigil near the office copier/fax machine. The main task is to preemptively sense a paper jam before it occurs and silently remove the offending sheet. Must also stare intently at the 'Toner Low' warning light, making hourly predictions about its operational lifespan. Requires the ability to look extremely busy while doing almost nothing."
+    },
+
 ];
 
 const jobListContainer = document.getElementById('job-list');
